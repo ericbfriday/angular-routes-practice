@@ -1,6 +1,7 @@
 var myApp = angular.module('myApp', ['ngRoute']);
 console.log('myApp sourced');
 
+// myApp.config(function ($routeProvider, $locationProvider) {
 myApp.config(function ($routeProvider) {
     $routeProvider.when('/', {
         templateUrl: 'views/home.html',
@@ -17,4 +18,5 @@ myApp.config(function ($routeProvider) {
     }).otherwise({
         redirectTo: '/'
     });
+    // $locationProvider.html5Mode(true);
 });

@@ -1,5 +1,9 @@
 <section class="character">
-        <img class="characterImages card" src="/images/zeldagif1.gif" alt="">
-        <img class="characterImages card" src="/images/zeldagif2.gif" alt="">
-        <img class="characterImages card" src="/images/zeldapic1.gif" alt="">
+        <div class="row match-my-cols">
+                <div class="card col-md-4"><img class="characterImages card" src="/images/zeldagif1.gif" alt=""><br/><button id="zelda1" class="btn"
+                                ng-click="zc.zeldaClickButton1()">Hi Five Zelda!</button><br/>Count: {{zc.zeldaCount1.count}}</div>
+                <div class="card col-md-4"><img class="characterImages card" src="/images/zeldagif2.gif" alt=""><br/><button id="zelda2" class="btn"
+                                ng-click="zc.zeldaClickButton2()">Hi Five Zelda Again!</button><br/>Count: {{zc.zeldaCount2.count}}</div>
+                <div class="card col-md-4"><img class="characterImages card" src="/images/zeldapic1.gif" alt=""><br/><button id="zelda3" class="btn"
+                                ng-click="zc.zeldaClickButton3()">Hi Five Zelda For The Third Time!</button><br/>Count: {{zc.zeldaCount3.count}}</div>
 </section>

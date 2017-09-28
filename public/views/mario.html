@@ -1,6 +1,8 @@
 <section class="character">
-    <img class="characterImages card" id="MarioJump8" src="/images/mario-8-bit-jump.png" alt="Mario 8 Bit">
-    <img class="characterImages card" src="/images/MarioJump.png" alt="Mario can jump in 64 bits, too!">
-    <img class="characterImages card" src="/images/mario-coin.png" alt="">
+    <div class="row match-my-cols">
+    <div class="card col-sm-4"><img class="characterImages" id="MarioJump8" src="/images/mario-8-bit-jump.png" alt="Mario 8 Bit"><br/><button id="mario1" class="btn" ng-click="mc.marioClickButton1()">Hi Five 8 Bit Mario!</button><br/>Count: {{mc.marioCount1.count}}</div>
+    <div class="card col-sm-4"><img class="characterImages" src="/images/MarioJump.png" alt="Mario can jump in 64 bits, too!"><br/><button id="mario2" class="btn" ng-click="mc.marioClickButton2()">Hi Five 64 Bit Mario!</button><br/>Count: {{mc.marioCount2.count}}</div>
+    <div class="card col-sm-4"><img class="characterImages" src="/images/mario-coin.png" alt=""><br/><button id="mario3" class="btn" ng-click="mc.marioClickButton3()">Hi Five a Mario Coin!</button><br/>Count: {{mc.marioCount3.count}}</div>
+    </div>
     <h2>Mario is a classic character whose existance has changed (and saved) the world!</h2>
 </section>

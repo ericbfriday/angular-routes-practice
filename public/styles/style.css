@@ -94,3 +94,12 @@ body {
 /* .characterImages {
     padding: 60px;
 } */
+
+.row.match-my-cols {
+    overflow: hidden; 
+}
+
+.row.match-my-cols [class*="col-"]{
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
+}
